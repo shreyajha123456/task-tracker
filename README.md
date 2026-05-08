@@ -1,29 +1,24 @@
+# 📋 FlowTasks – Modern Task Tracker
 
-# Task Tracker 🗂️
+A beautifully designed, interactive task management web app with persistent local storage. Keep track of your to-dos, mark them complete, edit inline, and clear completed tasks — all with a smooth, modern UI.
 
-A simple and lightweight Task Tracker web application built using **HTML**, **CSS**, and **Vanilla JavaScript**.  
-This app allows users to add tasks, manage pending work, and organize completed tasks in a clean interface.
 
----
+## ✨ Features
 
-## 🚀 Features
+- ✅ **Add new tasks** – type and press Enter or click the button.
+- 📝 **Inline editing** – click Edit, change text, and save automatically (Enter or blur).
+- 🗑️ **Delete individual tasks** – with a single click.
+- 🔁 **Move tasks** between Todo and Completed using checkboxes.
+- 🧹 **Clear all completed tasks** at once.
+- 💾 **Persistent storage** – tasks are saved in your browser’s localStorage.
+- 📱 **Responsive design** – works on desktop, tablet, and mobile.
+- 🎨 **Modern glass‑morphism UI** with smooth animations and hover effects.
 
-- Add new tasks
-- Separate sections for:
-  - Todo Tasks
-  - Completed Tasks
-- Simple and user-friendly UI
-- Built with pure JavaScript (no frameworks)
-- Beginner-friendly project structure
+## 🛠️ Technologies Used
 
----
+- HTML5
+- CSS3 (Flexbox, Grid, transitions, keyframe animations)
+- JavaScript (ES6+)
+- Font Awesome 6 (icons)
+- Google Fonts (Inter)
 
-## 📁 Project Structure
-
-```bash
-Task-Tracker/
-│
-├── index.html      # Main HTML file
-├── style.css       # Styling file
-├── logic.js        # JavaScript functionality
-└── README.md       # Project documentation
