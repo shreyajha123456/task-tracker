@@ -1,27 +1,45 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-	<title>Task Tracker</title>
-	<link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>FlowTasks | Modern Task Tracker</title>
+  <!-- Google Fonts + simple icons (Font Awesome 6 Free) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
 </head>
-
 <body>
-	<div class="container">
-		<p>
-			<label for="new-task" class="middle">Add Task</label>
-			<input id="new-task" type="text">
-			<button>Add Task</button>
-		</p>
-		<h3 class="middle">Todo</h3>
-		<ul id="incomplete-tasks">
-		</ul>
-		<h3 class="middle">Completed Tasks</h3>
-		<ul id="completed-tasks">
-		</ul>
-	</div>
-	<script type="text/javascript" src="logic.js"></script>
-	
-</body>
+<div class="container">
+  <div class="app-header">
+    <h1><i class="fas fa-check-circle"></i> FlowTasks</h1>
+    <div class="sub">modern, smooth & persistent</div>
+  </div>
+  <div class="add-task-panel">
+    <div class="input-group">
+      <label for="new-task"><i class="fas fa-plus-circle"></i> New task</label>
+      <input id="new-task" type="text" placeholder="Write a task ... press Enter or click button" autocomplete="off">
+      <button id="addTaskBtn" class="btn-primary"><i class="fas fa-plus"></i> Add Task</button>
+    </div>
+  </div>
 
+  <div class="section-head">
+    <h3><i class="fas fa-list-ul"></i> To do <span id="pendingCountBadge" class="badge-count">0</span></h3>
+  </div>
+  <ul id="incomplete-tasks"></ul>
+
+  <div class="section-head">
+    <h3><i class="fas fa-check-double"></i> Completed</h3>
+    <button id="clearCompletedBtn" class="clear-completed"><i class="fas fa-trash-alt"></i> Clear all completed</button>
+  </div>
+  <ul id="completed-tasks"></ul>
+  <footer>
+    <i class="fas fa-database"></i> auto-saved • click edit to modify • double sync
+  </footer>
+</div>
+
+<script src="script.js"></script>
+
+</body>
 </html>
